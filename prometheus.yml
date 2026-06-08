@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'prophet'
+    static_configs:
+      - targets: ['api:8000']
+
+# Note: Expose metrics from FastAPI using prometheus_client and an endpoint /metrics

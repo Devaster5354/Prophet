@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prophet-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: prophet
+  template:
+    metadata:
+      labels:
+        app: prophet
+    spec:
+      containers:
+        - name: api
+          image: prophet:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MLFLOW_TRACKING_URI
+              value: "http://mlflow:5000"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: prophet-service
+spec:
+  selector:
+    app: prophet
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP
+
+# These are skeleton manifests; adapt for EKS with proper IAM roles and storage classes.
