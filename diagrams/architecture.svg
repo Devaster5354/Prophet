@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400">
-  <rect width="100%" height="100%" fill="#0b1020" />
-  <text x="50%" y="20%" font-size="20" fill="#ffffff" text-anchor="middle">Prophet Architecture (placeholder)</text>
-  <text x="50%" y="40%" font-size="14" fill="#cbd5f5" text-anchor="middle">[Data] -> [Feature Engineering] -> [Training / MLflow] -> [Scoring API / Batch]</text>
-</svg>
