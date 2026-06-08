@@ -1,12 +1,10 @@
-Prophet — Complete README (Deep)
-
-Created by Abhinivesh | 2026
+Prophet — Complete README 
 
 1) Project purpose
 Prophet is a reproducible marketing incrementality platform created by Abhinivesh to showcase state-of-the-art ML engineering. It demonstrates CLV, uplift, churn, and purchase likelihood modeling with a dev-friendly MLflow-backed training pipeline, FastAPI scoring endpoint, Prefect flows for orchestration, local artifact storage via MinIO, Prometheus metrics, and infra guidance for AWS free-tier deployment.
 
 2) Architecture
-See diagrams/architecture.svg. Key components:
+Key components:
 - Data ingestion & feature engineering (data/)
 - Model training (models/train.py) with MLflow tracking
 - Model registry (MLflow) and artifact store (MinIO or S3)
@@ -53,5 +51,3 @@ See RESUME_NOTES.md for finance-focused bullets, and docs/case_study.md for narr
 - Enable MLflow server on an ECS Fargate task (cost varies).
 - Replace MinIO with S3 for artifacts and enable registry via MLflow with S3 storage.
 - Implement Grafana provisioning and dashboard automation.
-
-Contact: Created by Abhinivesh. Open an issue for questions or improvements.
