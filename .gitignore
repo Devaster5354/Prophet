@@ -24,3 +24,6 @@ data/
 *.pkl
 models/
 mlruns/
+
+# Local resume file - do not upload
+RESUME_NOTES.md
