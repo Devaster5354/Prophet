@@ -9,5 +9,3 @@ Contents
 3. Experiment design (A/B test, measurement windows)
 4. Results (ATE/ATT, % lift, $ incremental CLV)
 5. Business recommendation and appendix (code snippets to reproduce)
-
-Use this doc as the basis for the deep README case-study section.
