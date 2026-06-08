@@ -1,7 +1,9 @@
 Prophet — Complete README (Deep)
 
+Created by Abhinivesh | 2026
+
 1) Project purpose
-Prophet is a reproducible marketing incrementality platform demonstrating CLV, uplift, churn, and purchase likelihood modeling. It includes a dev-friendly MLflow-backed training pipeline, a FastAPI scoring endpoint, Prefect flows for orchestration, local artifact storage via MinIO, Prometheus metrics, and infra guidance for AWS free-tier deployment.
+Prophet is a reproducible marketing incrementality platform created by Abhinivesh to showcase state-of-the-art ML engineering. It demonstrates CLV, uplift, churn, and purchase likelihood modeling with a dev-friendly MLflow-backed training pipeline, FastAPI scoring endpoint, Prefect flows for orchestration, local artifact storage via MinIO, Prometheus metrics, and infra guidance for AWS free-tier deployment.
 
 2) Architecture
 See diagrams/architecture.svg. Key components:
@@ -38,7 +40,7 @@ See diagrams/architecture.svg. Key components:
 
 7) CI/CD & Tests
 - CI workflow: .github/workflows/ci.yml runs lint + tests. Tests live in tests/.
-- Use scripts/prepare_release.ps1 to prepare commits. Include Co-authored-by when committing via that script as needed.
+- Built by Abhinivesh to support reproducible experimentation and rapid iteration.
 
 8) Security & Cost notes
 - Do not commit secrets. Use environment variables or AWS Secrets Manager.
@@ -52,4 +54,4 @@ See RESUME_NOTES.md for finance-focused bullets, and docs/case_study.md for narr
 - Replace MinIO with S3 for artifacts and enable registry via MLflow with S3 storage.
 - Implement Grafana provisioning and dashboard automation.
 
-Contact: Open an issue or edit RESUME_NOTES.md to refine metrics and narratives before pushing to GitHub.
+Contact: Created by Abhinivesh. Open an issue for questions or improvements.
